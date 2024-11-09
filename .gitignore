@@ -2,7 +2,7 @@
 private.targets
 Managed
 *.DotSettings.user
-/bin
+*/bin
 */obj
 */NuGet.Config
 /packages/
