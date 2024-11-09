@@ -1,0 +1,11 @@
+.idea
+private.targets
+Managed
+*.DotSettings.user
+/bin
+*/obj
+*/NuGet.Config
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+/.vs
