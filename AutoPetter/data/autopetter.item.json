@@ -1,16 +1,16 @@
 {
   "id": 62137,
   "type": "decoration",
-  "name": "Auto petter",
+  "name": "Automatic Petter",
   "image": "autopetter.png",
-  "description": "Automatically pets animals in the surrounding area.\n<i><size=60%>If you're </size> <size=70%>that</size> annoyed.</i>",
+  "description": "A new piece of engineering developed in the Great City.\n<i><size=60%>Will love your animals when you won't!.</size></i>",
   "helpDescription": "Automatically pets animals in the surrounding area.",
   "useDescription": "(Left click to place)",
   "stackSize": 999,
   "canSell": true,
   "canTrade": true,
   "canTrash": true,
-  "goldSellPrice": 100,
+  "goldSellPrice": 50,
   "orbsSellPrice": 0,
   "ticketSellPrice": 0,
   "category": 1,
@@ -22,13 +22,13 @@
     "placeableOnWalls": false,
     "placeableAsRug": false
   },
-  "recipes": [
+  "shopEntries": [
     {
-      "list": "RecipeList_Anvil",
-      "hours": 1,
-      "inputs": [
-        {"id": 2001, "amount": 1}
-      ]
+      "shop": "TownHallMerchantTable",
+      "amount": 1,
+      "costGold": 1000,
+      "costOrbs": 0,
+      "costTickets": 0
     }
   ]
 }
