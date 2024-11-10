@@ -9,7 +9,7 @@ public static class ItemHandler {
     private const int AutoPetterId = 62137;
 
     private static void EnableAutoPetter(ItemData item) {
-        if (!item.name.Contains("Auto petter")) throw new Exception($"Item {item.id} does not appear to be an Auto petter.");
+        if (!item.name.Contains("Automatic Petter")) throw new Exception($"Item {item.id} does not appear to be an Auto petter.");
 
         var placeable = (Placeable)item.useItem;
         placeable.snapToTile = true;
