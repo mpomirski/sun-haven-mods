@@ -4,13 +4,13 @@ using BepInEx.Logging;
 using UnityEngine;
 using UnityEngine.Events;
 using Wish;
+using Logger = BepInEx.Logging.Logger;
 
 namespace AutoPetter;
 
 
 public class AutoPetter : Decoration {
     public override int UpdateOrder => 101;
-
     public override void SetMeta(DecorationPositionData decorationData)
     {
         base.SetMeta(decorationData);
@@ -31,12 +31,11 @@ public class AutoPetter : Decoration {
         }
     }
     
-    private static void PetAnimal(Animal animal)
+    public static void PetAnimal(Animal animal)
     {
         animal.animalItem.animalData.hasPetted = true;
-        animal.SetupAnimalCanvas();
-        animal.AttemptToDropItem();
-        var onAnimalEvent = Animal.onAnimalEvent;
-        onAnimalEvent?.Invoke(animal.animalItem.animalData, AnimalEventType.Pet);
+        animal.SetAnimationState(2, 2f);
+        animal.Emote(true, 0.33f);
+        animal.animalItem.animalData.relationship = Mathf.Clamp(animal.animalItem.animalData.relationship + 0.1f, 0.0f, (float) Animal.MaxRelationship);
     }
 }

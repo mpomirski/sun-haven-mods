@@ -6,7 +6,7 @@ using Wish;
 namespace AutoPetter;
 
 public static class ItemHandler {
-    private const int AutoPetterId = 62137;
+    public const int AutoPetterId = 62137;
 
     private static void EnableAutoPetter(ItemData item) {
         if (!item.name.Contains("Automatic Petter")) throw new Exception($"Item {item.id} does not appear to be an Auto petter.");

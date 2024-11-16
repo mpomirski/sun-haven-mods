@@ -47,12 +47,7 @@
         <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
         <PackageReference Include="UnityEngine.Modules" Version="2019.3.15" IncludeAssets="compile" />
     </ItemGroup>
-    <ItemGroup>
-        <Reference Include="Morthy.CustomItems">
-            <HintPath>$(GamePath)\BepInEx\plugins\CustomItems\*.dll</HintPath>
-            <Private>false</Private>
-        </Reference>
-    </ItemGroup>
+
 
     <ItemGroup>
         <Reference Include="Sirenix.Serialization">

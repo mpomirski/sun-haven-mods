@@ -8,7 +8,7 @@
         <EmbeddedResource Include="img\*.png"/>
     </ItemGroup>
 
-    <Import Project="$(SolutionDir)\private.targets"/>
+    <Import Project="$(SolutionDir)\autopetter.targets"/>
     <Import Project="$(SolutionDir)\solution.targets"/>
 
 </Project>
